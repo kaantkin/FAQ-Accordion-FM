@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+}
+
+html, body {
+    font-family: "Work Sans";
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+
+    --c-white: hsl(0, 0%, 100%);
+    --c-light-pink: hsl(275, 100%, 97%);
+    --c-pink: hsl(287, 61%, 53%);
+    --c-grayish-purple: hsl(292, 16%, 49%);
+    --c-dark-purple: hsl(292, 42%, 14%);
+}
+
+/* Parent container for all elements */
+.root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Since we have two bg sections to make 1 bg combined */
+.background-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bg-s1 {
+    height:35%;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-svg {
+    background: url(./assets/images/background-pattern-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.bg-s2 {
+    height: 65%;
+    background-color: var(--c-light-pink);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Has be in front of background */
+.foreground-section {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+/* Parent which contains both FAQ title and FAQ contents */
+.faq-section {
+    background-color: var(--c-white);
+    width: min(80%, 40em);
+    height: min-content;
+    padding-bottom: 40px;
+    min-height: 450px;
+    border-radius: 15px;
+    box-shadow: 0px 27px 37px -13px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-title {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 30px 0 30px;
+}
+.faq-title > h1 {
+    margin: 5px 0 5px 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--c-dark-purple);
+}
+
+.star-svg {
+    margin: 18px 20px 5px 0px;
+}
+
+/* Parent which contains all questions and answers */
+.faq-contents {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 0 30px;
+}
+
+.faq-question-block {
+    height: min-content;
+    cursor: pointer;
+    padding-top: 25px;
+}
+
+/* Separate each section in style */
+.faq-question-block > hr {
+    color: var(--c-light-pink);
+    border-style: solid;
+    margin: 25px 0 0 0;
+}
+
+/* Extra styling so show/hide button resides along title */
+.q-title {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--c-dark-purple);
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.q-title:hover {
+    color: 	var(--c-pink);
+}
+
+/* Remove default browser focus as we have custom one */
+.faq-question-block:focus {
+    outline: none;
+}
+
+/* Focus styling for keyboard only */
+.faq-question-block:focus-visible .q-title {
+    border: 2px solid var(--c-dark-purple);
+    color: 	var(--c-pink);
+    border-radius: 5px;
+}
+
+/* Show/hide button */
+.q-btn {
+    margin-left: 0.75em;
+}
+
+.answer {
+    cursor: text;
+    color: var(--c-grayish-purple);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.show-ans {
+    transition: .1s ease-in-out;
+    height: auto;
+    opacity: 1;
+    margin-top: 20px;
+    visibility: visible;
+}
+
+.hide-ans {
+    visibility: hidden;
+    height: 0;
+    transition: .1s ease;
+    opacity: 0;
+    margin: 0;
+    position: relative;
+    z-index: -1;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 5px;
+    background-color: var(--c-light-pink);
+    width: 100%;
+    z-index: 2;
+}
+
+.attribution > a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Support for smaller screens and mobile devices */
+@media (max-width: 600px) {
+    .faq-title > h1 {
+        font-size: 35px;
+    }
+
+    .star-svg {
+        margin-top: 14px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .q-title {
+        font-size: 16px;
+    }
+
+    .faq-section {
+        height: min-content;
+        padding-bottom: 40px;
+    }
+
+    .faq-contents {
+        padding: 0 20px 0 20px;
+    }
+
+    .q-btn {
+        margin-left: 1.75em;
+    }
+}

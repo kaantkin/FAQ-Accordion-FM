@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | FAQ accordion</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="root">
+        <div class="background-section">
+            <div class="bg-s1">
+                <div class="bg-svg"></div>
+            </div>
+            <div class="bg-s2"></div>
+        </div>
+        <div class="foreground-section">
+            <div class="faq-section">
+                <div class="faq-title">
+                    <span><img src="./assets/images/icon-star.svg" class="star-svg" width="35px" height="35px"></span>
+                    <h1>FAQs</h1>
+                </div>
+                <div class="faq-contents">
+                    <div id="q-1" class="faq-question-block" onclick="handleClick(event)" tabindex="0" role="button" onkeydown="handleKeyPress(event)">
+                        <div class="q-title">
+                            What is Frontend Mentor, and how will it help me?
+                            <img class="q-btn" src="./assets/images/icon-minus.svg" width="35px" height="35px">
+                        </div>
+                        <div class="answer show-ans">
+                            Frontend Mentor offers realistic coding challenges to help developers improve
+                            their frontend coding skills with all projects in HTML, CSS, and JavaScript. It's
+                            suitable for all levels and ideal for portfolio building.
+                        </div>
+                        <hr>
+                    </div>
+                    <div id="q-2" class="faq-question-block" onclick="handleClick(event)" tabindex="0" role="button" onkeydown="handleKeyPress(event)">
+                        <div class="q-title">
+                            Is Frontend Mentor Free?
+                            <img class="q-btn" src="./assets/images/icon-plus.svg" width="35px" height="35px">
+                        </div>
+                        <div class="answer hide-ans">
+                            Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.
+                        </div>
+                        <hr>
+                    </div>
+                    <div id="q-3" class="faq-question-block" onclick="handleClick(event)" tabindex="0" role="button" onkeydown="handleKeyPress(event)">
+                        <div class="q-title">
+                            Can I use Frontend Mentor projects in my portfolio?
+                            <img class="q-btn" src="./assets/images/icon-plus.svg" width="35px" height="35px">
+                        </div>
+                        <div class="answer hide-ans">
+                            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!
+                        </div>
+                        <hr>
+                    </div>
+                    <div id="q-4" class="faq-question-block" onclick="handleClick(event)" tabindex="0" role="button" onkeydown="handleKeyPress(event)">
+                        <div class="q-title">
+                            How can I get help if I'm stuck on a challenge?
+                            <img class="q-btn" src="./assets/images/icon-plus.svg" width="35px" height="35px">
+                        </div>
+                        <div class="answer hide-ans">
+                            The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can seek support from the community.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/kaantkin" target="_blank">Kaan</a>.
+        </div>
+    </div>
+</body>
+</html>
