@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://kaantkin.github.io/FAQ-Accordion-FM/index.html)
 
 ## My process
 
@@ -115,5 +115,5 @@ For future projects, I am going to focus on using semantic HTML as I feel like t
 
 
 ## Author
-
+- Author Website - [My Page](https://kaantkin.github.io/)
 - Frontend Mentor - [@kaantkin](https://www.frontendmentor.io/profile/kaantkin)
