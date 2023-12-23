@@ -29,12 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](../design/solution-screenshot.png)
+![](/design/solution-screenshot.png)
 
 
 ### Links
 
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://kaantkin.github.io/FAQ-Accordion-FM/index.html)
 
 ## My process
 
@@ -104,7 +104,7 @@ The final major thing I learnt was to smoothly hide and show answers when the qu
 
 ### Continued development
 
-For future projects, I am going to focus on using semantic HTML as I feel like this would benefit development, making code more structured and readable. At this stage, I want to focus more on CSS and I do not feel completely confident, especially with alignment and positioning of items. I also want to refine my ability to refactor code, especially in terms of reducing duplicates and making it more modular. I would also like to continue practicing responsive web design, as it proved to be quite challenging on this project (and I still don't have it 100% with issues such as div clipping out of screen when contents expanded).
+For future projects, I am going to focus on using semantic HTML as I feel like this would benefit development, making code more structured and readable. At this stage, I want to focus more on CSS and I do not feel completely confident, especially with alignment and positioning of items. I also want to refine my ability to refactor code, especially in terms of reducing duplicates and making it more modular. I would also like to continue practicing responsive web design, as it proved to be quite challenging on this project (and I still don't have it 100% with issues such as div clipping out of screen when contents expanded). I would also like to continue practicing responsive web design, as it proved to be quite challenging on this project (and I still don't have it 100% with issues such as div clipping out of screen when contents expanded).
 
 
 ### Useful resources
@@ -115,5 +115,5 @@ For future projects, I am going to focus on using semantic HTML as I feel like t
 
 
 ## Author
-
+- Author Website - [My Page](https://kaantkin.github.io/)
 - Frontend Mentor - [@kaantkin](https://www.frontendmentor.io/profile/kaantkin)
