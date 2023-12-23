@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Site](https://kaantkin.github.io/FAQ-Accordion-FM/index.html)
+- Live Site URL: [Live Site](https://kaantkin.github.io/FAQ-Accordion-FM/)
 
 ## My process
 
